@@ -413,6 +413,12 @@ list-style-type: none;
         width: auto;
         height: 36px;
     }
+    .menu li a{
+        text-decoration: none;
+     font-size: 0.8em;
+     color: #ffff;
+    list-style-type: none;
+    }
     
 .notif {
     display: flex;
@@ -460,7 +466,7 @@ list-style-type: none;
     flex-direction: column;
 }
 .listgame h1{
-    font-size: 1em;
+    font-size: 0.9em;
   position: absolute;
   left: 30px;
   color: rgb(255, 255, 255);
@@ -509,7 +515,7 @@ list-style-type: none;
     flex-direction: column;
 }
 .programlanjut h1{
-    font-size: 1em;
+    font-size: 0.9em;
   position: absolute;
   left: 30px;
   color: rgb(255, 255, 255);
@@ -548,14 +554,22 @@ list-style-type: none;
 .preniumpage{
     position: relative;
     color: white;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    min-height: 150vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #000;
-    border: 1px solid white;
+}
+.preniumpage .preniumintro{
+    top: 10px;
+    padding: 20px;
+   width: 50%;
+   height: 200px;
+   display: flex;
+   justify-content: center;
+   align-items:start;
+   flex-direction: column;
 }
 .preniumpage .preniumintro h1{
     font-size: 1em;
@@ -567,14 +581,21 @@ list-style-type: none;
 }
 .preniumpage  .optiongame{
     display: flex;
-   bottom: 10px;
-    position: absolute;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: auto;
-    background: red;
+    gap: 10px;
 }
+.preniumpage  .buying{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .preniumimg{
     position: relative;
  width: 100%;
@@ -583,7 +604,8 @@ list-style-type: none;
  justify-content: space-between;
  align-items: center;
  flex-direction: column;
- gap: 2px;
+ gap: 3px;
+border: 1px solid #fff;
 }
 .preniumimg .imgDisplay{
     width: 100%;
