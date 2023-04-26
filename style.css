@@ -460,7 +460,7 @@ list-style-type: none;
     flex-direction: column;
 }
 .listgame h1{
-    font-size: 1.1em;
+    font-size: 1em;
   position: absolute;
   left: 30px;
   color: rgb(255, 255, 255);
@@ -509,7 +509,7 @@ list-style-type: none;
     flex-direction: column;
 }
 .programlanjut h1{
-    font-size: 1.1em;
+    font-size: 1em;
   position: absolute;
   left: 30px;
   color: rgb(255, 255, 255);
@@ -549,7 +549,7 @@ list-style-type: none;
     position: relative;
     color: white;
     width: 100%;
-    min-height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -558,11 +558,11 @@ list-style-type: none;
     border: 1px solid white;
 }
 .preniumpage .preniumintro h1{
-    font-size: 1.4em;
+    font-size: 1em;
     letter-spacing: 1px;
 }
 .preniumpage .preniumintro p{
-    font-size: 1.1em;
+    font-size: 0.9em;
     letter-spacing: 1px;
 }
 .preniumpage  .optiongame{
