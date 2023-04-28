@@ -605,6 +605,7 @@ footer .footerContainer{
     object-fit: cover;
 }
 .preniumpage{
+<<<<<<< HEAD
   width: 100vw;
   min-height:240vh;
   background: #000;
@@ -613,6 +614,16 @@ footer .footerContainer{
   align-items: center;
   flex-direction: column;
   padding: 10px 10px 10px ;
+=======
+    position: relative;
+    color: white;
+    width: 190vw;
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+>>>>>>> 0392517137ca7f6e80dc731bb2b8d0844791451c
 }
 .preniumpage .preniumintro{
      width: auto;
