@@ -1,6 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    background: #555;
 }
 
 nav {
@@ -168,12 +170,12 @@ list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1414e9;
     padding: 1px auto;
+    background: #999;
 }
 .listgame .imggame img{
     width: 100%;
-    height: 240px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,12 +214,11 @@ list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #1414e9;
     padding: 1px auto;
 }
 .programlanjut .game2 .imggame img{
     width: 100%;
-    height: 240px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,7 +236,7 @@ list-style-type: none;
     flex-direction: column;
     background: #000;
     position: relative;
-    border: 1px solid white;
+    border-bottom: 2px white solid;
 }
 .preniumpage .preniumintro{
     position: absolute;
@@ -357,6 +358,59 @@ list-style-type: none;
   font-size: 1.3em;
   font-weight: 500;
 }
+
+footer{
+    display: flex;
+justify-content:center;
+align-items: center;
+width: 100vw;
+height: 495px;
+background: #190D99;
+
+}
+footer .footerContainer{
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  color: white;
+}
+.logofooter{
+   width: 150px;
+   height: 100px;
+   background: #000;
+   left: 20px;
+   top: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contenfooter{
+  width: 90%;
+  height: 350px;
+  gap: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contenfooter .flexconten{
+  width:90%;
+  height: 300px;
+  display: flex;
+  justify-content: start;
+  align-items:start;
+  flex-direction: column;
+  padding: 10px;
+
+}
+.contenfooter .flexconten p{
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
+}
 @media  screen and (max-width:1000px) {
     body{
         background: #000;
@@ -436,6 +490,7 @@ list-style-type: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 .imgbenner{
     width: 99%;
@@ -456,14 +511,15 @@ list-style-type: none;
 .listgame  {
     position: relative;
     width: 100%;
-    height: 210px;
+    height: 220px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1px auto;
-    gap: 20px;
+    gap: 10px;
     background: #000;
     flex-direction: column;
+    margin-bottom: 5px;
 }
 .listgame h1{
     font-size: 0.9em;
@@ -474,7 +530,7 @@ list-style-type: none;
   z-index: 10;
 }
 .listgame .game {
-    width: 100%;
+    width: 99%;
     height: 150px;
     display: flex;
     justify-content: center;
@@ -489,7 +545,6 @@ list-style-type: none;
     align-items: center;
     padding: 1px auto;
     border-radius: 5px;
-    background: #1414e9;
 }
 .listgame .imggame img{
     border-radius: 5px;
@@ -503,7 +558,6 @@ list-style-type: none;
 }
 
 .programlanjut {
-    position: relative;
     width: 100%;
     height: 210px;
     display: flex;
@@ -538,7 +592,6 @@ list-style-type: none;
     align-items: center;
     background: #ebdede;
     padding: 1px auto;
-    background: #1414e9;
     border-radius: 5px;
 }
 .programlanjut .game2 .imggame img{
@@ -552,24 +605,23 @@ list-style-type: none;
     object-fit: cover;
 }
 .preniumpage{
-    position: relative;
-    color: white;
-    width: 100vw;
-    min-height: 150vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 100vw;
+  min-height:240vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
 }
 .preniumpage .preniumintro{
-    top: 10px;
-    padding: 20px;
-   width: 50%;
-   height: 200px;
-   display: flex;
+     width: auto;
+    height: 17%;
+   display:flex;
    justify-content: center;
-   align-items:start;
+   align-items:center;
    flex-direction: column;
+   margin-right: 10px auto;
 }
 .preniumpage .preniumintro h1{
     font-size: 1em;
@@ -578,34 +630,46 @@ list-style-type: none;
 .preniumpage .preniumintro p{
     font-size: 0.9em;
     letter-spacing: 1px;
+    max-width: 70%;
 }
-.preniumpage  .optiongame{
-    display: flex;
+.preniumpage .preniumintro .buttonpage{
+    display: grid;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
-    height: auto;
+    padding: 20px auto;
     gap: 10px;
 }
+.preniumpage  .optiongame{
+width: 100%;
+height: 79%;
+display:flex;
+justify-content: center;
+align-items:center;
+flex-direction: column;
+}
 .preniumpage  .buying{
-    width: 99%;
-    height: 99%;
+    width: 80%;
+    height: 450px;
+    padding: 10px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin: 2px auto;
 }
 
 .preniumimg{
-    position: relative;
  width: 100%;
  height: 90%;
  display: flex;
+ gap: 10px;
  justify-content: space-between;
  align-items: center;
  flex-direction: column;
- gap: 3px;
-border: 1px solid #fff;
 }
 .preniumimg .imgDisplay{
     width: 100%;
@@ -659,6 +723,48 @@ border: 1px solid #fff;
   font-size: 1.1em;
   font-weight: 500;
    margin-left: 10px;
+}
+
+footer{
+    display: flex;
+justify-content:center;
+align-items: center;
+width: 100vw;
+height: auto;
+background: #190D99;
+
+}
+footer .footerContainer{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    color: white;
+    gap: 10px;
+  }
+
+.contenfooter{
+  width: 100%;
+  height:auto;
+  gap: 5px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contenfooter .flexconten{
+  display: flex;
+  justify-content: start;
+  align-items:start;
+  flex-direction: column;
+  padding: 10px;
+
+}
+.contenfooter .flexconten p,h1{
+    font-size: 1em;
+    font-weight: 600;
+    font-family: sans-serif;
 }
 }
 
