@@ -603,16 +603,23 @@ footer .footerContainer{
     object-fit: cover;
 }
 .preniumpage{
+<<<<<<< HEAD
     position: relative;
   max-width: 100vw;
+=======
+  width: 100vw;
+>>>>>>> 464c42cc988a787b8841f281b0a316d963204b28
   min-height:240vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 10px 10px 10px ;
+<<<<<<< HEAD
   margin-bottom: 10px;
 
+=======
+>>>>>>> 464c42cc988a787b8841f281b0a316d963204b28
 }
 .preniumpage .preniumintro{
      width: auto;

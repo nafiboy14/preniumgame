@@ -104,4 +104,8 @@ benner.src = bennerimg;
 
 
 let nextgame = document.getElementById('nextgame')
+<<<<<<< HEAD
 nextgame.src = optionGamePrenium.dota2;
+=======
+nextgame.src = optionGamePrenium.dota2;
+>>>>>>> 464c42cc988a787b8841f281b0a316d963204b28
