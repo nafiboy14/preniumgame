@@ -2,21 +2,23 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background: #e80eae;
+    background: #000;
 }
 
 nav {
+    position: relative;
     width: 100%;
     height: 65px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1.5fr 1fr 0.3fr;
     background: #262424;
     color: #ffff;
+    gap: 10px;
 }
-
 .logo {
+    margin: auto;
     display: flex;
+    margin-left: 20px;
     justify-content: center;
     align-items: center;
     background: #000;
@@ -33,29 +35,30 @@ nav {
 
 .kategori {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: auto;
+    justify-content: center;
     align-items: center;
-    padding: 0px;
     font-size: 1em;
     width: 93px;
     height: 36px;
 }
 
 .inputsearch {
-
+    position: relative;
     box-sizing: border-box;
-
-
+     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 463px;
     height: 45px;
+    gap: 10px;
+
 }
 
 .inputsearch input {
     position: relative;
+    border-radius: 20px;
     background: none;
     display: flex;
     justify-content: center;
@@ -63,17 +66,29 @@ nav {
     border: 1px solid #fff;
     width: 460px;
     height: 44px;
+    color: #ffff;
+    font-size: 0.9em;
+}
+.iconserc{
+  position: absolute;
+    right: 10px;
+    z-index: 2;
+    width: 30px;
+    height:30px;
+    color: white;
+    font-weight: 700;
 }
 
 .inputsearch input::placeholder {
     font-size: 1.2em;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .menu {
-
+  margin: auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    align-items: center;
     padding: 0px;
     gap: 30px;
     width: 180px;
@@ -82,6 +97,9 @@ nav {
 
 .menu li {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    align-items: center;
 }
 
 .menu li a {
@@ -92,35 +110,100 @@ nav {
 }
 
 .notif {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    margin: auto;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 0px;
-    gap: 30px;
-
+    gap: 10px;
+   position: relative;
     width: auto;
     height: 50px;
-
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 4;
-    flex-grow: 0;
 }
-
+.icon{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
 .icon svg {
+    position: absolute;
     width: 20px;
     color: white;
+    gap: 10px;
 }
 
 .profilimg {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: blue;
+    background: rgb(3, 196, 22);
+    margin: auto;
+}
+#profilUserPage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.menuUser{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    width: 20%;
+    height: 500px;
+    right: 10px;
+    top: 70px;
+    z-index: 5;
+    transition: all 1s;
+    transform: translateX(120%);
+}
+.menuUseractive{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    position: absolute;
+    width: 20%;
+    height: 500px;
+    right: 10px;
+    top: 70px;
+    z-index: 5;
+    transition: all 1s;
+    transform: translateX(0%);
+}
+.menuUser ul{
+    height: 80%;
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    align-items: start;
+ justify-content: space-evenly;
+    flex-direction: column;
+    background: transparent;
+     box-shadow: 1px 10px 30px   #f1f1f1;
+    backdrop-filter: blur (10px);
+    border: 1px solid white;
 }
 
+.menuUser li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+}
+
+.menuUser li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    list-style-type: none;
+    color: #fff;
+}
 .benner {
 
     width: 100%;
@@ -245,50 +328,43 @@ nav {
     object-fit: cover;
 }
 
-.preniumpage {
-    position: relative;
+
+
+ .preniumintro {
     color: white;
     width: 100%;
-    height: 80vh;
+    height: auto;
+    padding: 10px auto;
     gap: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
     flex-direction: column;
     background: #000;
     position: relative;
-    border-bottom: 2px white solid;
+    margin-bottom: 10px;
 }
 
-.preniumpage .preniumintro {
-    position: absolute;
-    top: 10px;
-    padding: 20px;
-    left: 10px;
-    width: 50%;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: -10px;
-    flex-direction: column;
-}
-
-.preniumpage .preniumintro p {
+ .preniumintro p {
     font-size: 1.2em;
     letter-spacing: 2px;
+    margin-left: 50px;
+}
+ .preniumintro h1 {
+    margin-left: 20px;
 }
 
-.preniumpage .preniumintro .buttonpage {
+ .preniumintro .buttonpage {
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
     padding: 20px auto;
     gap: 10px;
+    margin-left: 50px;
 }
 
-.preniumpage .preniumintro .buttonpage button {
+ .preniumintro .buttonpage button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -301,34 +377,34 @@ nav {
     font-size: 1.1em;
 }
 
-.preniumpage .optiongame {
-    display: flex;
-    bottom: 10px;
-    position: absolute;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
+ .optiongame {
+    color: white;
+    width: 100vw;
     height: auto;
-    padding: 15px auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background: #000;
 }
 
-.preniumpage .buying {
-    width: 90%;
-    height: 99%;
+ .buying {
+    width: 100%;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .preniumimg {
     position: relative;
-    width: 80%;
+    width: 85%;
     height: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    gap: 1px;
 }
 
 .preniumimg .imgDisplay {
@@ -356,6 +432,7 @@ nav {
 .preniumimg .deskriptionDisplay p {
     max-width: 80%;
     height: auto;
+    margin-left: 10px;
 }
 
 .profil {
@@ -366,18 +443,20 @@ nav {
     justify-content: start;
     align-items: center;
     padding: 10px auto;
+    margin-left: 10px;
 }
 
 .profil p {
     font-size: 1.1em;
     color: #fff;
+    margin-left: 10px;
 }
 
 .profil .profilimgprenium {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-
+    margin-left: 10px;
 }
 
 .profil .profilimgprenium img {
@@ -385,6 +464,7 @@ nav {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+    margin-left: 10px;
 }
 
 .price {
@@ -394,6 +474,7 @@ nav {
     padding: 15px auto;
     font-size: 1.3em;
     font-weight: 500;
+    margin-left: 10px;
 }
 
 footer {
@@ -458,51 +539,67 @@ footer .footerContainer {
     }
 
     nav {
-        min-width: 100%;
+        position: relative;
+        width: 100%;
+        height: 65px;
+       
         display: flex;
-
+        justify-content: center;
+        align-items: center;
+        background: #262424;
+        color: #ffff;
         gap: 10px;
     }
 
     .logo {
-        width: 85px;
+        width: 70px;
         height: 25px;
         margin-left: 10px;
     }
 
     .logo img {
-        width: 82px;
-        height: 22px;
+        width: 99%;
+        height: 99%;
         padding: 3px;
-        object-fit: cover;
+        object-fit: content;
 
     }
 
-    /* .kategori{
-        
-    } */
     .inputsearch {
 
         box-sizing: border-box;
 
-
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 173px;
-        height: 45px;
+        width: 143px;
+        height: 35px;
     }
 
     .inputsearch input {
-        position: relative;
-        background: none;
-        display: none;
+        position: absolute;
+        background: transparent;
+        display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid #fff;
-        width: 170px;
+        width: 80vw;
         border-radius: 10px;
+        transform: translateY(-75px);
     }
+    .inputsearch input .active{
+        transform: translateY(975px);
+        background: blue;
+    }
+    .iconserc{
+        position: absolute;
+          right: 10px;
+          z-index: 2;
+          width: 20px;
+          height:30px;
+          color: white;
+          font-weight: 700;
+      }
 
     .menu {
 
@@ -514,7 +611,32 @@ footer .footerContainer {
         width: auto;
         height: 36px;
     }
-
+    .menuUser{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        position: absolute;
+        width: 60%;
+        height: 500px;
+        right: 10px;
+        top: 70px;
+        z-index: 5;
+        transition: all 1s;
+        transform: translatey(-120%);
+    }
+    .menuUseractive{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        position: absolute;
+        width: 60%;
+        height: 500px;
+        right: 10px;
+        top: 70px;
+        z-index: 5;
+        transition: all 1s;
+        transform: translatey(0%);
+    }
     .menu li a {
         text-decoration: none;
         font-size: 0.8em;
@@ -523,28 +645,52 @@ footer .footerContainer {
     }
 
     .notif {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: auto;
+        margin-right: 1px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
         gap: 10px;
-
+       position: relative;
         width: auto;
         height: 50px;
-        margin-right: 20px;
+    }
+    .icon{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .icon svg {
+        position: absolute;
+        width: 15px;
+        color: white;
+        gap: 10px;
+    }
+    
+    .profilimg {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:20px;
+        height:20px;
+        border-radius: 50%;
+        background: rgb(3, 196, 22);
+        margin: auto;
     }
 
     .benner {
         width: 100%;
         height: 205px;
-        display: flex;
+        display:flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 10px;
     }
 
     .imgbenner {
-        width: 99%;
-        height: 200px;
+        width: 85%;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -552,7 +698,7 @@ footer .footerContainer {
 
     .imgbenner img {
         width: 99%;
-        height: 200px;
+        height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -562,15 +708,14 @@ footer .footerContainer {
     .listgame {
         position: relative;
         width: 100%;
-        height: 220px;
+        height: 380px;
         display: flex;
-        justify-content: center;
+        justify-content:start;
         align-items: center;
         padding: 1px auto;
-        gap: 10px;
+        gap: 50px;
         background: #000;
         flex-direction: column;
-        margin-bottom: 5px;
     }
 
     .listgame h1 {
@@ -578,34 +723,33 @@ footer .footerContainer {
         position: absolute;
         left: 30px;
         color: rgb(255, 255, 255);
-        top: -10px;
         z-index: 10;
     }
 
     .listgame .game {
-        width: 99%;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 95%;
+        height: 160px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 3px;
+        margin-top: 30px;
     }
 
     .listgame .imggame {
-        width: 40%;
-        height: 150px;
+        width: 100%;
+        height: 160px;
         display: flex;
+        padding: 5px auto;
+        background: none;
         justify-content: center;
         align-items: center;
-        padding: 1px auto;
         border-radius: 5px;
     }
 
     .listgame .imggame img {
         border-radius: 5px;
-        width: 100%;
-        height: 150px;
-        display: flex;
+        height: 155px;
+        display:flex;
         justify-content: center;
         align-items: center;
         padding: 1px auto;
@@ -613,30 +757,28 @@ footer .footerContainer {
     }
 
     .programlanjut {
+        position: relative;
         width: 100%;
         height: 210px;
-        display: flex;
+        display:flex;
         justify-content: center;
         align-items: center;
         padding: 1px auto;
-        background: #000;
         gap: 20px;
         flex-direction: column;
     }
 
     .programlanjut h1 {
         font-size: 0.9em;
-        position: absolute;
         left: 30px;
         color: rgb(255, 255, 255);
         top: -10px;
-        z-index: 10;
     }
 
     .programlanjut .game2 {
         width: 100%;
         height: 150px;
-        display: flex;
+        display:flex;
         justify-content: center;
         align-items: center;
         gap: 3px;
@@ -664,51 +806,42 @@ footer .footerContainer {
         object-fit: cover;
     }
 
-    .preniumpage {
-        position: relative;
-        max-width: 100vw;
-        min-height: 240vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 10px 10px 10px;
-        margin-bottom: 10px;
 
-    }
-
-    .preniumpage .preniumintro {
-        width: auto;
-        height: 17%;
+     .preniumintro {
+        width: 100vw;
+        height:35vh;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        background: #000;
+        justify-content: start;
+        align-items: start;
         flex-direction: column;
         margin-right: 10px auto;
     }
 
-    .preniumpage .preniumintro h1 {
-        font-size: 1em;
+     .preniumintro h1 {
+        font-size: 1.1em;
         letter-spacing: 1px;
+        margin-left: 5px;
     }
 
-    .preniumpage .preniumintro p {
+     .preniumintro p {
         font-size: 0.9em;
         letter-spacing: 1px;
-        max-width: 70%;
+        margin-left: 15px;
     }
 
-    .preniumpage .preniumintro .buttonpage {
+     .preniumintro .buttonpage {
         display: grid;
         justify-content: center;
         align-items: center;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
+        width: 95%;
         padding: 20px auto;
-        gap: 10px;
+        gap: 15px;
+        margin-left: 0px;
     }
 
-    .preniumpage .optiongame {
+     .optiongame {
         width: 100%;
         height: 79%;
         display: flex;
@@ -717,7 +850,7 @@ footer .footerContainer {
         flex-direction: column;
     }
 
-    .preniumpage .buying {
+     .buying {
         width: 80%;
         height: 450px;
         padding: 10px 10px;
@@ -757,7 +890,7 @@ footer .footerContainer {
     .preniumimg .deskriptionDisplay p {
         max-width: 100%;
         height: auto;
-        margin-left: 10px;
+        margin-left: 0px;
     }
 
     .profil {
@@ -765,29 +898,33 @@ footer .footerContainer {
         height: auto;
         display: flex;
         gap: 20px;
-        justify-content: start;
+        justify-content: center;
         align-items: center;
         padding: 10px auto;
+       margin-left: 1px;
     }
 
-    .profil p {
-        font-size: 1.1em;
-        color: #fff;
-    }
 
     .profil .profilimgprenium {
         width: 30px;
         height: 30px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
-        margin-left: 10px;
-
     }
 
     .profil .profilimgprenium img {
-        width: 100%;
-        height: 100%;
+        width: 30px;
+        height: 30px;
         object-fit: cover;
         border-radius: 50%;
+    }
+    #profilUserPage{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
     }
 
     .price {
@@ -802,7 +939,7 @@ footer .footerContainer {
 
     footer {
         position: relative;
-        display: flex;
+        display:flex;
         justify-content: center;
         align-items: center;
         width: 100vw;
@@ -842,7 +979,6 @@ footer .footerContainer {
 
     .contenfooter .flexconten p,
     h1 {
-        font-size: 1em;
         font-weight: 600;
         font-family: sans-serif;
     }

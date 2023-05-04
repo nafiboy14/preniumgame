@@ -1,6 +1,37 @@
+// //===searToggle====//
+// let inputsearch= document.getElementsByClassName('inputsearch')
+// let searToggle = document.getElementById('searToggle')
+// let searinput = document.getElementById('searinput')
+// let inputsearchac = document.getElementsByTagName('input')
+// searToggle.addEventListener('click', function(){
+//    inputsearchac[0].classList.toggle('inputsearch input active')
+//    console.log(inputsearchac)
+// })
+// //==========//
+
+
+let profilmenu = document.getElementById('profilmenu')
+
+let menuUser = document.getElementById('menuUser')
+
+profilmenu.addEventListener('click', function (e) {
+   menuUser.classList.toggle('menuUseractive')
+})
+
+//====profilUserPage====//
+let profilUserPage = document.getElementById('profilUserPage')
+
+let imgProfilUserPageUser = {
+   profilUserUser: src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXbpKeeGDLuC0SW1RvHziiFoQjVKIZo3EoOA&usqp=CAU"
+};
+profilUserPage.src = imgProfilUserPageUser.profilUserUser;
+
+//==========//
+
+
 // ===benner===//
 let benner = document.getElementById('banner')
-let bennerimg = src = "https://img.freepik.com/free-psd/gaming-concept-banner-design_23-2148538416.jpg?w=1380&t=st=1682562559~exp=1682563159~hmac=55aaa31032638d873b5818f492d48730c1d44ab4d65ce3dd8ec0f33bff3f741f";
+let bennerimg = src = "https://img.freepik.com/free-psd/gaming-concept-banner-design_23-2148538416.jpg?w=1380&t=st=1682562559~exp=1682563159~hmac=55aaa31032638d873b5818f492d48730c1d44ab4d65ce3dd8ec0f33bff3f741f"
 //==========//
 
 //===OptionGame===//
